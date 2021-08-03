@@ -1,0 +1,22 @@
+.picture__button{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: -40px;
+    right: -30px;
+    padding: 0;
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+}
+.picture__button:hover{
+    opacity: 0.6;
+}
+@media screen and (max-width: 910px){
+    .picture__button{
+        top: -35px;
+        right: 0;
+        width: 26px;
+        height: 26px;
+    }
+}

@@ -1,0 +1,9 @@
+.profile__page{
+    display: flex;
+}
+@media screen and (max-width: 910px){
+    .profile__page{
+        flex-direction: column;
+        align-items: center;
+    }
+}

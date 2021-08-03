@@ -1,0 +1,7 @@
+.popup__container{
+    margin: auto auto auto auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}

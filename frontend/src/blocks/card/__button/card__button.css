@@ -1,0 +1,20 @@
+.card__button{
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-self: flex-start;
+    align-items: flex-start;
+    height: 21px;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    width: 25px;
+    opacity: 1;
+    background-image: url(../../../images/hearth.svg);
+    background-repeat: no-repeat;
+}
+.card__button:hover{
+    opacity: 0.5;
+}
+

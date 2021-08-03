@@ -1,0 +1,11 @@
+.overlay__image{
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+}
+@media screen and (max-width: 910px){
+    .overlay__image{
+        width: 26px;
+        height: 26px;
+    }
+}

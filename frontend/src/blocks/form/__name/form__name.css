@@ -1,0 +1,23 @@
+.form__name{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 358px;
+    height: 29px;
+    margin: 0;
+}
+@media screen and (max-width:500px){
+    .form__name{
+        width: 260px;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+    }
+}

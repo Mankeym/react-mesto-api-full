@@ -1,0 +1,17 @@
+.overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    box-sizing: border-box;
+    align-items: center;
+    background: rgba(0, 0, 0, .5);
+    flex-direction: column;
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.6s, opacity 0.6s;
+    z-index: 1000;
+}
