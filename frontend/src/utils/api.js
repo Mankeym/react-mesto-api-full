@@ -120,7 +120,7 @@ class Api {
 }
 
 const api = new Api({
-    adress:'https://mesto.nomoreparties.co/v1/cohort-23',
+    adress:'http://domens.mankeym.praktukum.nomoredomains.club/api/',
     token:'36169384-18f3-4191-82d3-156e3e29d72d'
 
 })

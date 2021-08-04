@@ -1,4 +1,4 @@
-export const BASE_URL = 'https://auth.nomoreparties.co';
+export const BASE_URL = 'http://domens.mankeym.praktukum.nomoredomains.club';
 
 const handleOriginalResponse = (response) => {
     if (response.ok){
