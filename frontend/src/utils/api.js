@@ -1,6 +1,6 @@
 class Api {
     constructor({adress,token}){
-        this._adress = adress; 
+        this._adress = adress;
         this._token = token;
     }
     _checkApiRequest(res) {
@@ -14,7 +14,7 @@ class Api {
         return fetch(`${this._adress}/cards`,{
             headers: {
                 authorization: this._token
-                
+
             }
         }).then(this._checkApiRequest);
     }
@@ -25,7 +25,7 @@ class Api {
                 'Content-Type': 'application/json'
             }
         }).then(this._checkApiRequest);
-    
+
     }
     getInitialData() {
         return Promise.all([this.getUserInfo(), this.getCard()]);
@@ -43,8 +43,8 @@ class Api {
             })
         })
             .then(this._checkApiRequest);
-        
-            
+
+
     }
     addCard(name,link){
         return fetch(`${this._adress}/cards`,{
@@ -120,8 +120,8 @@ class Api {
 }
 
 const api = new Api({
-    adress:'https://mesto.nomoreparties.co/v1/cohort-22',
-    token:'1c933ec4-a4fc-4d43-aaf4-c9a8a8844745'
+    adress:'https://mesto.nomoreparties.co/v1/cohort-23',
+    token:'36169384-18f3-4191-82d3-156e3e29d72d'
 
 })
 
