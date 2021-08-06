@@ -1,4 +1,3 @@
-
 const express = require('express');
 const mongoose = require('mongoose');
 const { celebrate, Joi, errors } = require('celebrate');
@@ -6,6 +5,7 @@ const bodyParser = require('body-parser');
 const userRouter = require('./routes/users');
 const cardsRouter = require('./routes/cards');
 const { login, createUser } = require('./controllers/users');
+const NotFoundError = require('./errors/not-found-error');
 
 const { PORT = 3000 } = process.env;
 const app = express();
@@ -34,8 +34,8 @@ app.use(auth);
 app.use('/users', userRouter);
 app.use('/cards', cardsRouter);
 
-app.use('*', (req, res) => {
-  res.status(404).send({ message: 'Запрашиваемый ресурс не найден' });
+app.use('*', (next) => {
+  next(new NotFoundError('Запрашиваемый ресурс не найден'));
 });
 app.use(errors());
 app.use(errorHandler);
